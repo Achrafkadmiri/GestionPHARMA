@@ -14,6 +14,6 @@ public interface DetailService {
         List<DetailOrdonnance>  getAllDetails();
         void  deleteDetailById(Long id);
         void  deleteAllDetails();
-      //  List<DetailOrdonnance> findByOrdonnance(Long id);
+        List<DetailOrdonnance> findByOrdonnance(Long id);
 
 }

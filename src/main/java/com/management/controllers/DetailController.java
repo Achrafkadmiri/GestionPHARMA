@@ -35,12 +35,12 @@ public class DetailController {
         modelMap.addAttribute("ido",id);
         return "createDetail";
     }
-   /* @RequestMapping("/detailList")
+    @RequestMapping("/detailList")
     public String dordonnanceList(@RequestParam("id")Long id,ModelMap modelMap){
       List<DetailOrdonnance> ordonnanceController =detailService.findByOrdonnance(id);
         modelMap.addAttribute("dordonnances", ordonnanceController);
         return "dordonnanceList";
-    }*/
+    }
 
     @RequestMapping("/saveDetail")
     public String saveDetailOrdonnance(@RequestParam("idord")Long idOrdonnance,@RequestParam("idMed")Long idMed,  @Valid DetailOrdonnance detailOrdonnance, BindingResult bindingResult, ModelMap modelMap) throws ParseException {

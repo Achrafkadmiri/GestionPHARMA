@@ -93,7 +93,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">AJOUTER LABORATOIRE</h1>
+                        <h1 class="mt-4">ajouter detail</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active">ajouter detail</li>
                         </ol>
@@ -116,7 +116,7 @@
                                 <div class="row mb-4">
                                     <div class="col">
                                         <div class="form-outline">
-                                            <label class="form-label" >Fournisseur</label>
+                                            <label class="form-label" >Medicament</label>
                                             <select name="idMed" class="form-select">
                                                 <option th:each="medicament:${medicaments}"  th:text="${medicament.nomMed}"  th:value="${medicament.code}"></option>
                                             </select>

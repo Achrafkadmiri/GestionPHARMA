@@ -1,7 +1,16 @@
 package com.management.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 @Entity
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
 public class DetailOrdonnance {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,42 +22,5 @@ public class DetailOrdonnance {
     @ManyToOne(fetch = FetchType.LAZY)
     private Ordonnance ordonnance;
 
-    public DetailOrdonnance(Long idDetail, int qteMedicament, Medicament medicament, Ordonnance ordonnance) {
-        this.idDetail = idDetail;
-        this.qteMedicament = qteMedicament;
-        this.medicament = medicament;
-        this.ordonnance = ordonnance;
-    }
 
-    public Long getIdDetail() {
-        return idDetail;
-    }
-
-    public int getQteMedicament() {
-        return qteMedicament;
-    }
-
-    public Medicament getMedicament() {
-        return medicament;
-    }
-
-    public Ordonnance getOrdonnance() {
-        return ordonnance;
-    }
-
-    public void setIdDetail(Long idDetail) {
-        this.idDetail = idDetail;
-    }
-
-    public void setQteMedicament(int qteMedicament) {
-        this.qteMedicament = qteMedicament;
-    }
-
-    public void setMedicament(Medicament medicament) {
-        this.medicament = medicament;
-    }
-
-    public void setOrdonnance(Ordonnance ordonnance) {
-        this.ordonnance = ordonnance;
-    }
 }

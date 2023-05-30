@@ -46,9 +46,9 @@ public class DetailImp1 implements DetailService{
     }
 
 
-   /* public List<DetailOrdonnance> findByOrdonnance(Long id) {
+    public List<DetailOrdonnance> findByOrdonnance(Long id) {
         return repository.findByOrdonance(id);
-    }*/
+    }
 
 
 
